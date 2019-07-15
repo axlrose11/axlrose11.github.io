@@ -97,6 +97,12 @@ button:focus {
   color: #ff2f92
 }
 
+@media (min-width: 768px) {
+  .site-heading {
+    font-size: 25px;
+  }
+}
+
 .p_120 {
   padding-top: 120px;
   padding-bottom: 120px;
