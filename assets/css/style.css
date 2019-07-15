@@ -64,6 +64,10 @@ button:focus {
   }
 }
 
+.featurette-divider {
+    margin: 3rem 0;
+}
+
 .p_120 {
   padding-top: 120px;
   padding-bottom: 120px;
