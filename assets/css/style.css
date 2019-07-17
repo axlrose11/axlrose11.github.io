@@ -67,6 +67,11 @@ button:focus {
 .featurette-divider {
     margin: 3rem 0;
 }
+.slide {
+  padding-right: 0px;
+  padding-left: 0px;
+  border: none;
+}
 
 .p_120 {
   padding-top: 120px;
