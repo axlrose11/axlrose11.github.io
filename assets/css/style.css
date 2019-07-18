@@ -2278,3 +2278,44 @@ h1, h2, h3, h4, h5, h6 {
 .form-select .nice-select::after {
   right: 20px;
 }
+
+
+#groomsmen-section{
+  padding: 0px;
+}
+
+.groomsmen-item{
+  margin-bottom:60px;
+}
+
+
+.animated.fadeIn {
+    -webkit-animation-name: fadeIn;
+    -moz-animation-name: fadeIn;
+    -o-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+.photo-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.photo-item.frame-border {
+    background-color: #FFF;
+    border: 18px solid #FFF;
+}
+
+.v-align{
+  display:table-cell; 
+}
+
+.center-middle{
+  vertical-align:middle;
+  text-align:center;
+}
+
+.title-excerpt {
+    position: relative;
+    background-color: #FFF;
+    padding: 25px;
+}
