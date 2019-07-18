@@ -11,25 +11,46 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Flexslider -->
+    <link rel="stylesheet" href="assets/css/flexslider.css" type="text/css">
 
     <!-- Custom styles -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <div class="flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm text-center">
+    <div class="flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom shadow-sm text-center">
       <a href="/" alt="Home">
       <h5 class="site-heading my-0 mr-md-auto font-weight-normal">Thiên Phước & Thùy Duyên</h5>
     </a>
     </div>
 
-    <div class="px-3 py-3 pt-md-4 pb-md-4 mx-auto text-center">
+<div id="main-slider" class="slide flexslider fullscreen container-fluid">
+    <ul class="slides">
+      <li>
+        <img src="assets/images/slide1.jpg" />
+      </li>
+      <li>
+        <img src="assets/images/slide2.jpg" />
+      </li>
+      <li>
+        <img src="assets/images/slide3.jpg" />
+      </li>
+    </ul><!-- END of MAIN SLIDER IMAGES -->
+
+</div>
+
+    <!-- <div class="px-3 py-3 pt-md-4 pb-md-4 mx-auto text-center">
       <img src="assets/images/home-banner.jpg" class="img-fluid" alt="Wedding photo">
       <br>
       <br>
       <img src="assets/images/shap-4.jpg" class="img-fluid" alt="Wedding photo">
       <p>Xin vui lòng quay trở lại để xem hình nhé!</p>
-    </div>
+    </div> -->
 
     <div class="clear-fix"></div>
 
@@ -60,8 +81,8 @@
     </div>
     <hr class="featurette-divider border-bottom shadow-sm">
 
-
-
+    <script type="text/javascript" src="assets/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="assets/js/main-slider-fade.js"></script>
 
 </body>
 </html>
