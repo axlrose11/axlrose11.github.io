@@ -14,10 +14,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Flexslider -->
     <link rel="stylesheet" href="assets/css/flexslider.css" type="text/css">
+    <!-- Gallery -->
+    <link rel="stylesheet" href="gallery/css/blueimp-gallery.css">
 
     <!-- Custom styles -->
     <link href="assets/css/style.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-route.min.js"></script>
+
+    <script src="assets/js/ngflickr.js"></script>
+    <script src="assets/js/ngflickrcontrollers.js"></script>
+
+    <base href="/">
+
 </head>
 
 <body>
@@ -46,64 +57,29 @@
     </div>
 
     <div class="clear-fix"></div>
-<!-- 
-    <section id="special-moments">
-        <div class="container">
 
-            <div class="row">
-                <div class="text-center">
-                    <div class="section-title animation fadeInUp">
-                        <h2>Our Special Moments</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante quis pharetra. Nullam notn bibendum dolor. Ut vel turpis accumsan, efficitur dolor fermentum, tincidunt metus. Etiam ut ultrices nibh. Etiam aliquam mauris non hendrerit faucibus. Proin pulvinar congue ex, vitae</p>
-                    </div>
-                </div>
-            </div>
+    <div ng-app="ngFlickrApp">
+      <div ng-view></div>
+    </div>
 
-            <div class="row">
-
-                <div class="col-md-4">
-                    <div class="special-moment-item">
-                        <div class="photo-item frame-border animation fadeIn">
-                            <img src="https://via.placeholder.com/293x325" alt="" class="hover-animation image-zoom-rotate">
-                        </div>
-                        <div class="title-excerpt animation fadeIn text-center">
-                            <h3>Lễ Hôn Phối</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="special-moment-item">
-                        <div class="photo-item frame-border animation fadeIn">
-                            <img src="https://via.placeholder.com/293x325" alt="" class="hover-animation image-zoom-rotate">
-                        </div>
-                        <div class="title-excerpt animation fadeIn text-center">
-                            <h3>Lễ Gia Tiên</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="special-moment-item">
-                        <div class="photo-item frame-border animation fadeIn">
-                            <img src="https://via.placeholder.com/293x325" alt="" class="hover-animation image-zoom-rotate">
-                        </div>
-                        <div class="title-excerpt animation fadeIn text-center">
-                            <h3>Tiệc Cưới</h3>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section> -->
+    <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+    <div id="blueimp-gallery" class="blueimp-gallery">
+        <div class="slides"></div>
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+    </div>
 
     <hr class="featurette-divider border-bottom shadow-sm">
 
     <script type="text/javascript" src="assets/js/jquery.flexslider.js"></script>
     <script type="text/javascript" src="assets/js/main-slider-fade.js"></script>
+    <script type="text/javascript" src="gallery/js/blueimp-helper.js"></script>
+    <script type="text/javascript" src="gallery/js/blueimp-gallery.js"></script>
+    <script type="text/javascript" src="gallery/js/jquery.blueimp-gallery.js"></script>
 
 </body>
 
