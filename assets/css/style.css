@@ -2306,7 +2306,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .v-align{
-  display:table-cell; 
+  display:table-cell;
 }
 
 .center-middle{
@@ -2316,6 +2316,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .title-excerpt {
     position: relative;
-    background-color: #FFF;
-    padding: 25px;
+    background-color: #ffe4e4;
+    padding: 20px;
+}
+
+@media (max-width: 768px){
+  .img-fluid {
+    max-width: 25%;
+  }
+}
+
+#special-moments{
+  background-color: #ffe4e4;
+}
+
+@media (min-width: 768px){
+  #special-moments img {
+    /* width: 315px; */
+  }
 }

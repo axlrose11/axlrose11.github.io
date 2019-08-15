@@ -8,13 +8,13 @@ ngFlickrApp.config(['$routeProvider',
   function($routeProvider) {
       $routeProvider
         .when('/', {
-          controller: 'PhotoSetsListCtrl',
-          templateUrl: 'templates/page.html'
-        })
-        .when('/photoset/:setID', {
           controller: 'SetDetailCtrl',
           templateUrl: 'templates/photoset.html'
         })
+        // .when('/photoset/:setID', {
+        //   controller: 'SetDetailCtrl',
+        //   templateUrl: 'templates/photoset.html'
+        // })
         .otherwise({
           redirectTo: '/'
       });

@@ -3,8 +3,8 @@
 var ngFlickrControllers = angular.module('ngFlickrControllers', []);
 
 //Flickr API Key
-var flickr_api_key = '99eb9fb89f9108327aaacab9833c1dd5';
-var flickr_user_id = '83841932@N02';
+var flickr_api_key = 'a8ddab1de9f1ebaeb9dd78aa65620e85';
+var flickr_user_id = '54408719@N06';
 
 ngFlickrControllers.controller('PhotoSetsListCtrl', ['$scope', '$http',
   function ($scope, $http) {
@@ -33,10 +33,10 @@ ngFlickrControllers.controller('PhotoSetsListCtrl', ['$scope', '$http',
 // https://api.flickr.com/services/rest/?method=flickr.photosets.getList&api_key=9e00bd9ac5620eeb3d33ac566593dd06&user_id=83841932%40N02&format=json&api_sig=dfb1c8a82c9e840e9aa11367e274a6f0
 
 
-ngFlickrControllers.controller('SetDetailCtrl', ['$scope', '$routeParams', '$http',
+ngFlickrControllers.controller('SetDetailCtrl', ['$scope', '$http',
 
-  function($scope, $routeParams, $http) {
-    $scope.setID = $routeParams.setID;
+  function($scope, $http) {
+    $scope.setID = '72157710165227241';
 
     /*
     $scope.callMe = function(event){
@@ -54,7 +54,7 @@ ngFlickrControllers.controller('SetDetailCtrl', ['$scope', '$routeParams', '$htt
       url: 'https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos',
       params: {
         'api_key': flickr_api_key,
-        'photoset_id': $routeParams.setID,
+        'photoset_id': $scope.setID,
         'format': 'json',
         'jsoncallback': 'JSON_CALLBACK'
       }
